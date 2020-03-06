@@ -1,0 +1,33 @@
+
+.outer {
+    background-image: url("../../assets/scotland.JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.inner {
+    display: table;
+    margin: 0 auto; /*centers*/
+}
+.search-box {
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    margin-left: 3pt;
+    margin-right: 25pt;
+    background-color: white;
+    border-style: none;
+    padding-top: 4pt;
+    padding-bottom: 4pt;
+}
+.rounded-back {
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 200pt;
+    margin-bottom: 200pt;
+    width: 250pt;
+}
+.company-name {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 15pt;
+    color: white;
+}

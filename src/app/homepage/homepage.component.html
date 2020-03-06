@@ -1,0 +1,22 @@
+<div [className]="'outer'">
+
+    <div [className]="'inner'">
+        <table>
+            <tr>
+                <td>
+                    <span [className]="'company-name'">JBMG Limited</span>
+                </td>
+                <td>
+                    <div [className]="'rounded-back'">
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td><input [className]="'search-box'" (keyup)="onKey($event)"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
