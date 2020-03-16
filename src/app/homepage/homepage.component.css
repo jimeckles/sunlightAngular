@@ -18,12 +18,13 @@
     border-style: none;
     padding-top: 4pt;
     padding-bottom: 4pt;
+    width: 225pt;
 }
 .rounded-back {
     border-radius: 5px;
     background-color: white;
-    margin-top: 200pt;
-    margin-bottom: 200pt;
+    margin-top: 80pt;
+    margin-bottom: 80pt;
     width: 250pt;
 }
 .company-name {

@@ -10,7 +10,7 @@
                         <table>
                             <tr>
                                 <td></td>
-                                <td><input [className]="'search-box'" (keyup)="onKey($event)"></td>
+                                <td><input placeholder="search here..." [(ngModel)]="searchText" [className]="'search-box'" (keyup)="onKey($event)"></td>
                             </tr>
                         </table>
                     </div>
@@ -21,10 +21,8 @@
 </div>
 <div>
     <ul>
-        <li *ngFor="let book of books">
+        <li *ngFor="let book of books | filter : searchText">
             {{book.title}}
-
         </li>
     </ul>
-    <ng-template #empty>No Results Yet</ng-template>
 </div>

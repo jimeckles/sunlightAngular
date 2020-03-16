@@ -9,6 +9,7 @@ import { BookServiceService } from '../services/book-service.service';
 export class HomepageComponent implements OnInit {
 
   books;
+  searchText;
 
   constructor(private bookService: BookServiceService) { }
 
