@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BookServiceService } from '../services/book-service.service';
+import { BookServiceService, Book } from '../services/book-service.service';
 
 @Component({
   selector: 'app-homepage',
@@ -20,7 +20,7 @@ export class HomepageComponent implements OnInit {
     this.bookService.getBooks()
       .subscribe((data) => {
         console.log(data);
-        let bodyData = data['body'];
+        const bodyData = data.body;
         this.books = JSON.parse(bodyData);
       });
   }
