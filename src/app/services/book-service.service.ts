@@ -3,9 +3,15 @@ import { Injectable } from '@angular/core';
 import { throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
+//todo use this type
 export interface Book {
   id: string;
   title: string;
+}
+
+export interface AwsHttpResponse {
+  body: string;
+  statusCode: string;  
 }
 
 @Injectable({
@@ -40,7 +46,7 @@ export class BookServiceService {
 */
 
   getBooks() {
-    return this.http.get(this.url).pipe(
+    return this.http.get<AwsHttpResponse>(this.url).pipe(
       catchError(this.handleError)
     );
   }
