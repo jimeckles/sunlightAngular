@@ -20,7 +20,7 @@ export class HomepageComponent implements OnInit {
     this.bookService.getBooks()
       .subscribe((data) => {
         console.log(data);
-        let bodyData = data['body'];
+        const bodyData = data.body;
         this.books = JSON.parse(bodyData);
       });
   }

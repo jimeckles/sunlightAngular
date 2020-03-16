@@ -1,11 +1,11 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, throwError } from 'rxjs';
-import { catchError, retry } from 'rxjs/operators';
+import { throwError } from 'rxjs';
+import { catchError } from 'rxjs/operators';
 
 export interface Book {
-  id: String;
-  title: String;
+  id: string;
+  title: string;
 }
 
 @Injectable({
@@ -32,7 +32,7 @@ export class BookServiceService {
     // return an observable with a user-facing error message
     return throwError(
       'Something bad happened; please try again later.');
-  };
+  }
 
   /*
   body: "[{\"id\":\"60e272d88c43bbc684601096fc711dff\",\"title\":\"One Hundred Years of Solitude\"}]"
