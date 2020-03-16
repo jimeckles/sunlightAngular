@@ -1,5 +1,4 @@
 <div [className]="'outer'">
-
     <div [className]="'inner'">
         <table>
             <tr>
@@ -19,4 +18,13 @@
             </tr>
         </table>
     </div>
+</div>
+<div>
+    <ul>
+        <li *ngFor="let book of books">
+            {{book.title}}
+
+        </li>
+    </ul>
+    <ng-template #empty>No Results Yet</ng-template>
 </div>
